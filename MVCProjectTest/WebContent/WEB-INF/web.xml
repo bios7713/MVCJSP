@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>WEB</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+   <servlet>
+  	<servlet-name>member</servlet-name>
+  	<servlet-class>Controller.Member.MemberController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>member</servlet-name>
+  		<url-pattern>*.nhn</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>driver</servlet-name>
+  	<servlet-class>Controller.Driver.DriverController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>driver</servlet-name>
+  		<url-pattern>*.dv</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>car</servlet-name>
+  	<servlet-class>Controller.Car.CarController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>car</servlet-name>
+  		<url-pattern>*.cs</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>qnaBoard</servlet-name>
+  	<servlet-class>Controller.QNABoard.QNABoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>qnaBoard</servlet-name>
+  		<url-pattern>*.qb</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>manager</servlet-name>
+  	<servlet-class>Controller.Manager.ManagerController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  		<servlet-name>manager</servlet-name>
+  		<url-pattern>*.mg</url-pattern>
+  </servlet-mapping>
+  
+  
+      <servlet>
+     <servlet-name>answerBoard</servlet-name>
+     <servlet-class>Controller.AnswerBoard.AnswerBoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>answerBoard</servlet-name>
+        <url-pattern>*.ab</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+     <servlet-name>noticeBoard</servlet-name>
+     <servlet-class>Controller.NoticeBoard.NoticeBoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+        <servlet-name>noticeBoard</servlet-name>
+        <url-pattern>*.nb</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>
